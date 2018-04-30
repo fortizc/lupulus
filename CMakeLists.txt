@@ -22,5 +22,5 @@ file(GLOB HEADERS include/lupulus/*.h)
 install(FILES ${HEADERS} DESTINATION include/${PROJECT_NAME})
 
 # Test
-enable_testing()
-add_subdirectory(test)
+# enable_testing()
+# add_subdirectory(test)
