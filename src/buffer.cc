@@ -16,7 +16,7 @@ namespace lpl
         std::size_t get()
         {
             std::lock_guard<std::mutex> lck(mtx);
-            idx = idx == max ? 0 : ++idx;
+            idx = idx == max ? 0 : idx + 1;
             return idx;
         }
 
